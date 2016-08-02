@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+  <Identity Name="a750cc7e-fc50-4496-aaf3-975cd7018279" Publisher="CN=My.com" Version="1.0.81.0" />
+  <mp:PhoneIdentity PhoneProductId="a750cc7e-fc50-4496-aaf3-975cd7018279" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Mycom.Tracker Demo (WPA)</DisplayName>
+    <PublisherDisplayName>My.com</PublisherDisplayName>
+    <Logo>Assets\Mycom.Target.120.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Mycom.Tracker.DemoApp.App">
+      <m3:VisualElements DisplayName="Mycom.Tracker Demo (WPA)" Square150x150Logo="Assets\Mycom.Target.360.png" Square44x44Logo="Assets\Mycom.Target.106.png" Description="Mycom.Tracker demo application" ForegroundText="light" BackgroundColor="transparent">
+        <m3:DefaultTile Square71x71Logo="Assets\Mycom.Target.170.png" />
+      </m3:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>

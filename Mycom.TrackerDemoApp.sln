@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "myTrackerDemo", "myTrackerDemo", "{09DD7CA7-5CF8-42F1-91CC-9860D8D3310A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Mycom.TrackerDemoApp.Shared", "myTrackerDemo\Mycom.TrackerDemoApp.Shared\Mycom.TrackerDemoApp.Shared.shproj", "{F9835972-9194-420D-B96B-8318E1A7EE01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mycom.TrackerDemoApp.UAP", "myTrackerDemo\Mycom.TrackerDemoApp.UAP\Mycom.TrackerDemoApp.UAP.csproj", "{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mycom.TrackerDemoApp.WPA", "myTrackerDemo\Mycom.TrackerDemoApp.WPA\Mycom.TrackerDemoApp.WPA.csproj", "{FB9AB62B-8D94-496D-88C2-11E6583ED315}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		myTrackerDemo\Mycom.TrackerDemoApp.Shared\Mycom.TrackerDemoApp.Shared.projitems*{e1af7fe8-454e-490e-bcf0-563f5d77ea2f}*SharedItemsImports = 4
+		myTrackerDemo\Mycom.TrackerDemoApp.Shared\Mycom.TrackerDemoApp.Shared.projitems*{f9835972-9194-420d-b96b-8318e1a7ee01}*SharedItemsImports = 13
+		myTrackerDemo\Mycom.TrackerDemoApp.Shared\Mycom.TrackerDemoApp.Shared.projitems*{fb9ab62b-8d94-496d-88c2-11e6583ed315}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Debug|ARM.Build.0 = Debug|ARM
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Debug|ARM.Deploy.0 = Debug|ARM
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Debug|x64.ActiveCfg = Debug|x64
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Debug|x64.Build.0 = Debug|x64
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Debug|x64.Deploy.0 = Debug|x64
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Debug|x86.ActiveCfg = Debug|x86
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Debug|x86.Build.0 = Debug|x86
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Debug|x86.Deploy.0 = Debug|x86
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Release|ARM.ActiveCfg = Release|ARM
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Release|ARM.Build.0 = Release|ARM
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Release|ARM.Deploy.0 = Release|ARM
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Release|x64.ActiveCfg = Release|x64
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Release|x64.Build.0 = Release|x64
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Release|x64.Deploy.0 = Release|x64
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Release|x86.ActiveCfg = Release|x86
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Release|x86.Build.0 = Release|x86
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F}.Release|x86.Deploy.0 = Release|x86
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Debug|ARM.ActiveCfg = Debug|ARM
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Debug|ARM.Build.0 = Debug|ARM
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Debug|ARM.Deploy.0 = Debug|ARM
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Debug|x64.ActiveCfg = Debug|x86
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Debug|x86.ActiveCfg = Debug|x86
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Debug|x86.Build.0 = Debug|x86
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Debug|x86.Deploy.0 = Debug|x86
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Release|ARM.ActiveCfg = Release|ARM
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Release|ARM.Build.0 = Release|ARM
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Release|ARM.Deploy.0 = Release|ARM
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Release|x64.ActiveCfg = Release|x86
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Release|x86.ActiveCfg = Release|x86
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Release|x86.Build.0 = Release|x86
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F9835972-9194-420D-B96B-8318E1A7EE01} = {09DD7CA7-5CF8-42F1-91CC-9860D8D3310A}
+		{E1AF7FE8-454E-490E-BCF0-563F5D77EA2F} = {09DD7CA7-5CF8-42F1-91CC-9860D8D3310A}
+		{FB9AB62B-8D94-496D-88C2-11E6583ED315} = {09DD7CA7-5CF8-42F1-91CC-9860D8D3310A}
+	EndGlobalSection
+EndGlobal
