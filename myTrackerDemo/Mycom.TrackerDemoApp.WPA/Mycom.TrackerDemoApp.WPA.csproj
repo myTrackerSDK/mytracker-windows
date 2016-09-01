@@ -74,13 +74,15 @@
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Mycom.Tracker, Version=1.2.0.0, Culture=neutral, PublicKeyToken=dd9814a81da1af1e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Mycom.Tracker.1.2.0\lib\wpa81\Mycom.Tracker.dll</HintPath>
+    <Reference Include="Mycom.Tracker, Version=1.2.1.0, Culture=neutral, PublicKeyToken=dd9814a81da1af1e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Mycom.Tracker.1.2.1\lib\wpa81\Mycom.Tracker.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="..\Mycom.TrackerDemoApp.Shared\Mycom.TrackerDemoApp.Shared.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
