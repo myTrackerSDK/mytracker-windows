@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using Windows.ApplicationModel.Store;
+using Windows.Storage;
 using Windows.UI.Xaml;
+using Windows.UI.Xaml.Input;
 using Mycom.Tracker;
 
 namespace Mycom.TrackerDemoApp
@@ -21,6 +24,23 @@ namespace Mycom.TrackerDemoApp
                                    { "param2", "value2" }
                                };
             MyTracker.TrackEvent("CustoEvent", customParams);
+        }
+
+        private async void OnTrackInAppPurchaseClick(Object sender, TappedRoutedEventArgs e)
+        {
+            var file = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///WindowsStoreProxy.xml"));
+
+            await CurrentAppSimulator.ReloadSimulatorAsync(file);
+
+            const String productId = "Durable1";
+
+            var purchaseResults = await CurrentAppSimulator.RequestProductPurchaseAsync(productId);
+
+            MyTracker.TrackPurchaseEvent(productId,
+                                         purchaseResults.TransactionId,
+                                         purchaseResults.OfferId,
+                                         purchaseResults.ReceiptXml,
+                                         purchaseResults.Status);
         }
 
         private void OnTrackInviteClick(Object sender, RoutedEventArgs e)

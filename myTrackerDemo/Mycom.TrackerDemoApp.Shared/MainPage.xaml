@@ -7,23 +7,42 @@
       mc:Ignorable="d">
     <Page.Resources>
         <Style TargetType="Border">
+            <Setter Property="BorderBrush" Value="White" />
+            <Setter Property="BorderThickness" Value="1" />
             <Setter Property="CornerRadius" Value="4" />
             <Setter Property="Padding" Value="12,10" />
-            <Setter Property="BorderThickness" Value="1" />
-            <Setter Property="BorderBrush" Value="White" />
         </Style>
         <Style TargetType="TextBlock">
-            <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="HorizontalAlignment" Value="Center" />
-            <Setter Property="Foreground" Value="White" />
             <Setter Property="FontSize" Value="14.0" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
         </Style>
         <Style TargetType="Grid">
-            <Setter Property="Margin" Value="0,0,0,4" />
             <Setter Property="Height" Value="50" />
+            <Setter Property="Margin" Value="0,0,0,4" />
         </Style>
     </Page.Resources>
     <StackPanel VerticalAlignment="Bottom" Orientation="Vertical">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="4" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="4" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="1" Tapped="OnTrackInAppPurchaseClick">
+                <Border.Background>
+                    <SolidColorBrush Opacity="0.7" Color="SteelBlue" />
+                </Border.Background>
+                <Border.BorderBrush>
+                    <SolidColorBrush Opacity="0.7" Color="LightSteelBlue" />
+                </Border.BorderBrush>
+                <TextBlock Text="IN-APP PURCHASE" />
+            </Border>
+        </Grid>
 
         <Grid>
             <Grid.ColumnDefinitions>
